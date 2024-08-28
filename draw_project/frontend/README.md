@@ -1,8 +1,23 @@
-# React + Vite
+# Azekar't 🎨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur Azekar't ! C'est mon projet personnel où je partage mes créations artistiques. Ce site est développé avec Django pour le backend et React pour le frontend. Mon objectif est de créer une plateforme attrayante pour exposer mes dessins et offrir une expérience utilisateur fluide.
 
-Currently, two official plugins are available:
+Sur Azekar't, vous découvrirez mes œuvres et pourrez en savoir plus sur mon parcours artistique. Le site inclut :
+- Une **page d'accueil** pour vous accueillir
+- Une **galerie** pour explorer mes dessins
+- Des options pour **se connecter ou s'inscrire**
+- Un **panier** pour gérer vos achats
+- Un **formulaire de livraison et paiement** pour finaliser vos commandes
+- Une **page à propos** pour en savoir plus sur moi et voir l'évolution de mes dessins
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies utilisées
+
+Je me suis amusé à utiliser les technologies suivantes pour ce projet :
+- **Backend** : Django
+- **Frontend** : React
+- **Styles** : CSS
+- **Design** : Figma pour les maquettes
+
+## Utilisation
+
+Le site est en cours de production et n'est pas encore fini, dès qu'il sera fini le read.me sera mis à jour. 
