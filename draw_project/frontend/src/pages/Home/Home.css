@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Empêche le défilement */
+}
+
+.logo {
+    position: absolute;
+    top: -20px;  /* Ajustez cette valeur pour déplacer le logo vers le bas */
+    left: 20px; /* Ajustez cette valeur pour déplacer le logo vers la droite */
+    width: 300px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+    z-index: 100; /* Assurez-vous que le logo est au-dessus des autres éléments */
+}
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex: 1; /* Prend l'espace disponible, permettant à la bande violette de se placer en bas */
+    padding-bottom: 1px;
+}
+
+.home-image {
+    width: 600px; /* Ajuste selon tes besoins */
+    height: auto;
+    position: relative;
+    top: 160px;
+    right: 300px;
+}
+
+.text-content {
+    flex: 1; /* Prend l'espace restant */
+}
+
+h1 {
+    font-family: 'Bayon-Regular', sans-serif;
+    text-transform: uppercase;
+    text-align: right;
+    position: relative;
+    top: -170px;
+    left: 320px;
+}
+
+.purple-band {
+    background-color: #B66FA0;
+    height: 119px; /* Ajuste la hauteur de la bande selon tes besoins */
+    width: 100%; /* Prend toute la largeur de la fenêtre */
+    position: fixed; /* Positionne la bande en bas */
+    bottom: 0; /* Aligne la bande en bas de `.home-container` */
+    left: 0; /* Assure que la bande commence à gauche */
+    z-index: 10;
+}
