@@ -2,6 +2,7 @@ import React from "react";
 import './Home.css';
 import shizuku from '../../assets/img/shizuku.jpg';
 import logoazekart from '../../assets/img/logoazekart.png'
+import { Link } from "react-router-dom";
 
 function Home(){
     return (
@@ -16,7 +17,8 @@ function Home(){
 
             <div className='text-content'>
                 <header className="home-header">
-                    <h1>Bienvenue sur Azekar't...</h1>
+                    <h1>Bienvenue sur Azekar't</h1>
+                    <p className='site-access'>Pour accéder au site, <Link to="/Accueil" className="welcome-link">cliquez ici</Link>.</p>
                 </header>
             </div>
 
