@@ -1,0 +1,52 @@
+.navbar{
+    display: flex;
+    justify-content: space-between; /* espace entre les liens */
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.logo{
+    height: auto;
+    align-self: flex-start;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 390px;
+    flex: 1; /* Prend tout l'espace horizontal disponible */
+}
+
+.nav-link {
+    margin: 0 15px; /* Espacement entre les liens */
+    text-decoration: none;
+    color: #000; /* Couleur des liens */
+    font-size: 18px; /* Taille de la police des liens */
+    text-transform: uppercase;
+}
+
+/* Optionnel : Ajoutez un effet de hover pour les liens */
+.nav-link:hover {
+    color: #B66FA0; /* Change la couleur au survol */
+}
+
+.accountlogo{
+    width: 35px;
+    align-self: flex-start;
+    position: relative;
+    bottom: 390px;
+    left: 300px;
+}
+
+.cartlogo {
+    width: 35px;
+    align-self: flex-start;
+    position: relative;
+    bottom: 390px;
+    left: 320px;
+}
