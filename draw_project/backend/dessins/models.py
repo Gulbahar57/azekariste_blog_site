@@ -9,7 +9,9 @@ class Dessin(models.Model):
     temps_passe = models.CharField(max_length=20)
     materiel_utilise = models.CharField(max_length=255)
     difficulte = models.CharField(max_length=255)
+    description = models.CharField(max_length=250, default='Pas de description') 
     image = models.ImageField(upload_to='dessins/')
 
-def __str__(self):
-    return self.nom_personnage
+# pour retourner le nom du personnage dans la table
+    def __str__(self):
+        return self.nom_personnage
