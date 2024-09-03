@@ -7,11 +7,12 @@ html, body {
 
 .logo {
     position: absolute;
-    top: -20px;  /* Ajustez cette valeur pour déplacer le logo vers le bas */
-    left: 20px; /* Ajustez cette valeur pour déplacer le logo vers la droite */
+    top: -50px;  /* Ajustez cette valeur pour déplacer le logo vers le bas */
+    left: 100px; /* Ajustez cette valeur pour déplacer le logo vers la droite */
     width: 300px; /* Ajustez la taille selon vos besoins */
     height: auto;
     z-index: 100; /* Assurez-vous que le logo est au-dessus des autres éléments */
+    border: none;
 }
 
 .home-container{

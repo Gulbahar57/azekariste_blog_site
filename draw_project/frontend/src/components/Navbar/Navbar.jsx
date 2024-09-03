@@ -1,6 +1,6 @@
 import React from "react";
 import './Navbar.css';
-import logoazekart from '../../assets/img/logoazekart.png'
+import logoazekart from '../../assets/img/Logoazekart.svg'
 import accountlogo from '../../assets/img/accountlogo.png'
 import cartlogo from '../../assets/img/cartlogo.png'
 

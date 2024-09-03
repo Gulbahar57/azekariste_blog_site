@@ -1,7 +1,7 @@
 import React from "react";
 import './Home.css';
 import shizuku from '../../assets/img/shizuku.jpg';
-import logoazekart from '../../assets/img/logoazekart.png'
+import logoazekart from '../../assets/img/Logoazekart.svg'
 import { Link } from "react-router-dom";
 
 function Home(){
