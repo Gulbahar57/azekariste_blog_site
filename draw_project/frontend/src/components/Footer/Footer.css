@@ -1,0 +1,32 @@
+.purple-band {
+    background-color: #B66FA0; /* Couleur violet pour la bande */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px; /* Espacement entre les icônes */
+}
+
+.social-links img {
+    position: relative;
+    right: -825px;
+    width: 30px;  /* Taille de l'icône */
+    height: auto;
+}
+
+.site-informations {
+    font-family: sans-serif;
+    font-size: small;
+    text-transform: uppercase;
+    font-style: italic;
+    display: flex;
+    position: relative;
+    left: -100px;
+    color: white;
+    gap: 20px;
+}

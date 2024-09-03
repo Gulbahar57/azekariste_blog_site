@@ -13,8 +13,12 @@ function Navbar(){
                 <a className="nav-link" href='/Gallery'>Dessins</a>
                 <a className="nav-link" href='/About'>A propos d'Azekar't</a>
                 </div>
+            <a href="/Account">
             <img src={accountlogo} alt='accountlogo' className='accountlogo'/>
+                </a>
+                <a href="/Cart">
             <img src={cartlogo} alt="cartlogo" className="cartlogo" />
+            </a>
         </nav>
     );
 }
