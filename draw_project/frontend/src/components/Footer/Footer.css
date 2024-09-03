@@ -14,7 +14,7 @@
 
 .social-links img {
     position: relative;
-    right: -825px;
+    right: -780px;
     width: 30px;  /* Taille de l'icône */
     height: auto;
 }
@@ -22,11 +22,10 @@
 .site-informations {
     font-family: sans-serif;
     font-size: small;
-    text-transform: uppercase;
     font-style: italic;
     display: flex;
     position: relative;
-    left: -100px;
+    left: -150px;
     color: white;
     gap: 20px;
 }
