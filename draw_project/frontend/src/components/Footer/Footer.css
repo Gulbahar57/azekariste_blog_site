@@ -28,4 +28,20 @@
     left: -150px;
     color: white;
     gap: 20px;
+    align-items: center;
+}
+
+.site-informations .contact {
+    color: white;
+    text-decoration: none;
+}
+
+.site-informations .cgv {
+    color: white;
+    text-decoration: none;
+}
+
+.site-informations .FAQ {
+    color: white;
+    text-decoration: none;
 }
