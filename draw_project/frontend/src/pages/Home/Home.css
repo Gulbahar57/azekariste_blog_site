@@ -34,7 +34,7 @@ html, body {
     width: 600px; /* Ajuste selon tes besoins */
     height: auto;
     position: relative;
-    top: 170px;
+    top: 200px;
     right: 300px;
 }
 
@@ -47,7 +47,7 @@ h1 {
     text-transform: uppercase;
     text-align: right;
     position: relative;
-    top: -155px;
+    top: -120px;
     left: 320px;
     color: black;
 }
@@ -64,7 +64,7 @@ h1 {
 
 .site-access{
     position: relative;
-    bottom: 190px;
+    bottom: 150px;
     left: 92px;
     font-family: 'Bayon-Regular', sans-serif;
     font-style: italic;
