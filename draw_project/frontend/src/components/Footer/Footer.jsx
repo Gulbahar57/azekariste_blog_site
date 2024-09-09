@@ -9,8 +9,12 @@
             <footer>
                 <div className="purple-band">
                     <div className="social-links">
+                        <a href="https://www.instagram.com/azekariii_draw">
                         <img src={instagramlogo} alt="instagramlogo"/>
+                        </a>
+                        <a href="https://www.tiktok.com/@azekariii_draw">
                         <img src={tiktoklogo} alt="tiktoklogo"/>
+                        </a>
                     </div>
                     <div className ="site-informations">
                         <p>Copyright © 2024 - Tous droits réservés. </p>

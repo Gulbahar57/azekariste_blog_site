@@ -17,6 +17,7 @@
     right: -780px;
     width: 30px;  /* Taille de l'icône */
     height: auto;
+    align-items: center;
 }
 
 .site-informations {
