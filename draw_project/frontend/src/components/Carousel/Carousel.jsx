@@ -1,25 +1,36 @@
-import React from "react";
-import './Carousel.css';
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
+import React, { useState } from 'react';
+import './Carousel.css'; // Nous créerons ce fichier CSS plus tard
 
-const Carousel = () => {
+const Carousel = ({ images }) => {
+  const [currentPage, setCurrentPage] = useState(0);
+
+  const imagesPerPage = 3;
+  const totalPages = Math.ceil(images.length / imagesPerPage);
+
+  const nextPage = () => {
+    setCurrentPage((prev) => (prev + 1) % totalPages);
+  };
+
+  const prevPage = () => {
+    setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages);
+  };
+
+  const startIndex = currentPage * imagesPerPage;
+  const visibleImages = images.slice(startIndex, startIndex + imagesPerPage);
+
   return (
-    <CarouselProvider
-     naturalSlideWidth={100}
-     naturalSlideHeight={120}
-     totalSlides={3}
-    >
-
-    <Slider>
-      <Slide index={0}>Slide 1</Slide>
-      <Slide index={1}>Slide 2</Slide>
-      <Slide index={2}>Slide 3</Slide>
-    </Slider>
-
-    <ButtonBack>Back</ButtonBack>
-    <ButtonNext>Next</ButtonNext>
-   </CarouselProvider>
+    <div className="carousel">
+      <div className="carousel-images">
+        {visibleImages.map((image, index) => (
+          <img key={startIndex + index} src={image} alt={`Drawing ${startIndex + index + 1}`} />
+        ))}
+      </div>
+      <div className="carousel-controls">
+        <button onClick={prevPage}>Précédent</button>
+        <span>{`Page ${currentPage + 1} sur ${totalPages}`}</span>
+        <button onClick={nextPage}>Suivant</button>
+      </div>
+    </div>
   );
 };
 

@@ -1,0 +1,48 @@
+.carousel {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .carousel-images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-images img {
+    width: 32%; /* Légèrement moins que 33.33% pour l'espacement */
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* font-family: 'Bayon-Regular', sans-serif; */
+    text-transform: uppercase;
+    font-size: medium;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #B66FA0;
+    /* color: white; */
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #B66FA0;
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-images {
+      flex-direction: column;
+    }
+  
+    .carousel-images img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
