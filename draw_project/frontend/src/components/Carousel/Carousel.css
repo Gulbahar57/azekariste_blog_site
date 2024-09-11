@@ -10,9 +10,10 @@
   }
   
   .carousel-images img {
-    width: 32%; /* Légèrement moins que 33.33% pour l'espacement */
-    height: auto;
-    object-fit: cover;
+    width: 439.17px;
+    height: 439.17px;
+    object-fit: cover; /* Ceci garantit que l'image couvre tout l'espace sans déformation */
+    object-position: center; /* Centre l'image dans le cadre */
   }
   
   .carousel-controls {
