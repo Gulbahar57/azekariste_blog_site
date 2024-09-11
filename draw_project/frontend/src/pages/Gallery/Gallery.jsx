@@ -21,14 +21,14 @@ function Gallery() {
     livairizze,
     erenff
 
-        // Ajoutez autant d'images que vous voulez
+        // Ajoutez autant d'images que vous voulez 
     ];
 
     return (
         <div className="gallery-page">
             <Navbar />
             <main className="gallery-content">
-                <h1>Dessins</h1>
+                <h1 className="dessintext">Dessins</h1>
                 <Carousel images={images} />
             </main>
             <Footer />
