@@ -1,4 +1,6 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
+from django.conf import settings
 
 # Create your models here.
 
@@ -15,3 +17,18 @@ class Dessin(models.Model):
 # pour retourner le nom du personnage dans la table
     def __str__(self):
         return self.nom_personnage
+
+class Order(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    dessin = models.ForeignKey('Dessin', on_delete=models.CASCADE)  # Assurez-vous que 'Dessin' est le nom correct de votre modèle de dessin
+    date_commande = models.DateTimeField(auto_now_add=True)
+    statut = models.CharField(max_length=20, choices=[
+        ('en_attente', 'En attente'),
+        ('en_cours', 'En cours'),
+        ('terminee', 'Terminée'),
+        ('annulee', 'Annulée')
+    ], default='en_attente')
+
+    def __str__(self):
+        return f"Commande {self.id} par {self.user.username}"
+
