@@ -8,6 +8,7 @@ function Accueil(){
         <div>
             <Navbar />  {/* Ajout de la Navbar ici */}
             <Footer /> {/* Ajout du footer ici */}
+            
         </div>
 
 
