@@ -7,7 +7,9 @@ import cartlogo from '../../assets/img/cartlogo.png'
 function Navbar(){
     return(
         <nav className='navbar'>
+            <a href="/Accueil">
             <img src={logoazekart} alt="logoazekar't" className='logo'/>
+            </a>
             <div className='nav-links'>
                 <a className="nav-link" href='/Accueil'>Accueil</a>
                 <a className="nav-link" href='/Gallery'>Dessins</a>
