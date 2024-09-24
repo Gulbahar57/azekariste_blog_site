@@ -8,9 +8,9 @@ function About(){
     return (
         <div className="about-page">
             <Navbar />
-        <div className="about-content">
+        <main className="about-content">
             <h1 className="about-text">A propos d'Azekar't...</h1>
-        </div>
+        </main>
             <Footer />
         </div>
     )
