@@ -6,23 +6,26 @@
     width: 100%;
     padding: 10px 20px;
     box-sizing: border-box;
+    position: fixed;
+    top: 65px;
+    left: 0;
+    z-index: 1000;
 }
-
+.logo-container {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+}
 .logo{  
-    width: 240px;
     position: absolute;
-    left: 180px; /* Ajustez cette valeur pour déplacer le logo vers la droite */
-    height: auto;
-    z-index: 100; /* Assurez-vous que le logo est au-dessus des autres éléments */
+    bottom: -2px;
+    left:  200px;
+    width: 280px;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: 390px;
-    flex: 1; /* Prend tout l'espace horizontal disponible */
+    position: absolute;
+    right: 750px;
 }
 
 .nav-link {
@@ -38,18 +41,24 @@
     color: #B66FA0; /* Change la couleur au survol */
 }
 
-.accountlogo{
-    width: 35px;
-    align-self: flex-start;
+.nav-icons{
+    display: flex;
+    align-items: center;
     position: relative;
-    bottom: 390px;
-    left: 300px;
+    width: 440px;
+}
+
+.accountlogo, .cartlogo {
+    width: 35px;
+    position: absolute;
+}
+
+.accountlogo {
+    right: 390px;
+    bottom: -18px;
 }
 
 .cartlogo {
-    width: 35px;
-    align-self: flex-start;
-    position: relative;
-    bottom: 390px;
-    left: 320px;
+    right: 340px;
+    bottom: -18px;
 }

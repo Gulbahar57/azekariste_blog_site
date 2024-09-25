@@ -7,7 +7,7 @@ import cartlogo from '../../assets/img/cartlogo.png'
 function Navbar(){
     return(
         <nav className='navbar'>
-            <a href="/Accueil">
+            <a href="/Accueil" className="logo-container">
             <img src={logoazekart} alt="logoazekar't" className='logo'/>
             </a>
             <div className='nav-links'>
@@ -15,12 +15,14 @@ function Navbar(){
                 <a className="nav-link" href='/Gallery'>Dessins</a>
                 <a className="nav-link" href='/About'>A propos d'Azekar't</a>
                 </div>
+                <div className="nav-icons">
             <a href="/Account">
             <img src={accountlogo} alt='accountlogo' className='accountlogo'/>
                 </a>
                 <a href="/Cart">
             <img src={cartlogo} alt="cartlogo" className="cartlogo" />
             </a>
+            </div>
         </nav>
     );
 }
