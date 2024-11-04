@@ -1,49 +1,44 @@
 .carousel {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  
-  .carousel-images {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  .carousel-images img {
-    width: 439.17px;
-    height: 439.17px;
-    object-fit: cover; /* Ceci garantit que l'image couvre tout l'espace sans déformation */
-    object-position: center; /* Centre l'image dans le cadre */
-  }
-  
-  .carousel-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* font-family: 'Bayon-Regular', sans-serif; */
-    text-transform: uppercase;
-    font-size: medium;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #B66FA0;
-    /* color: white; */
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #B66FA0;
-  }
-  
-  @media (max-width: 768px) {
-    .carousel-images {
-      flex-direction: column;
-    }
-  
-    .carousel-images img {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-  }
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-images {
+  display: flex; /* Affiche les images en ligne */
+  justify-content: space-between; /* Espace entre les images */
+  margin-bottom: 20px;
+  position: relative; /* Nécessaire pour le positionnement absolu des légendes */
+}
+
+.carousel-item {
+  position: relative; /* Positionnement relatif pour chaque image et légende */
+  flex: 1; /* Permet aux images de prendre un espace égal */
+  margin: 0 10px; /* Ajoute un espace entre les images */
+  max-width: 100%; /* S'assure que chaque image ne dépasse pas le conteneur */
+  overflow: hidden; /* Évite que le contenu dépasse le rectangle blanc */
+}
+
+.carousel-images img {
+  width: 100%; /* L'image remplit le conteneur */
+  height: 100%; /* S'assure que l'image prend toute la hauteur du conteneur */
+  object-fit: cover; /* Remplit le cadre sans déformation */
+  object-position: center; /* Centre l'image dans le cadre */
+  border-radius: 8px; /* Arrondit les coins des images */
+}
+
+.carousel-caption {
+  position: absolute; /* Positionnement absolu par rapport à chaque image */
+  top: 50%; /* Centre verticalement */
+  left: 50%; /* Centre horizontalement */
+  transform: translate(-50%, -50%); /* Ajuste la position pour centrer complètement */
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+  color: white; /* Couleur du texte */
+  opacity: 0; /* Caché par défaut */
+  transition: opacity 0.3s ease-in-out; /* Transition douce pour l'opacité */
+  text-align: center; /* Centre le texte */
+}
+
+.carousel-item:hover .carousel-caption {
+  opacity: 1; /* Affiche la légende au survol de l'image */
+}

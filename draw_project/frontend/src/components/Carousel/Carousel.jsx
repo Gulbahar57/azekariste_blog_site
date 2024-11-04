@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import './Carousel.css'; // Nous créerons ce fichier CSS plus tard
+import './Carousel.css'; // Assurez-vous que le CSS est importé
 
 const Carousel = ({ images }) => {
   const [currentPage, setCurrentPage] = useState(0);
 
-  const imagesPerPage = 3;
+  const imagesPerPage = 3; // Ajustez cela en fonction de vos besoins
   const totalPages = Math.ceil(images.length / imagesPerPage);
 
   const nextPage = () => {
@@ -22,7 +22,10 @@ const Carousel = ({ images }) => {
     <div className="carousel">
       <div className="carousel-images">
         {visibleImages.map((image, index) => (
-          <img key={startIndex + index} src={image} alt={`Drawing ${startIndex + index + 1}`} />
+          <div key={startIndex + index} className="carousel-item"> {/* Nouveau conteneur pour l'image et la légende */}
+            <img src={image.src} alt={`Drawing ${startIndex + index + 1}`} />
+            <div className="carousel-caption">{image.caption}</div> {/* Légende de l'image */}
+          </div>
         ))}
       </div>
       <div className="carousel-controls">

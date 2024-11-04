@@ -14,14 +14,12 @@ import erenff from '../../assets/img/erenff.jpg';
 function Gallery() {
     // Définissez ici un tableau avec les chemins de vos images
     const images = [
-    shizuku,
-    gonkirua,
-    nami,
-    makii,
-    livairizze,
-    erenff
-
-        // Ajoutez autant d'images que vous voulez 
+        { src: shizuku, caption: 'Dessin de Shizuku' },
+        { src: gonkirua, caption: 'Dessin de Gonkirua' },
+        { src: nami, caption: 'Dessin de Nami' },
+        { src: makii, caption: 'Dessin de Makii' },
+        { src: livairizze, caption: 'Dessin de Livai Rizze' },
+        { src: erenff, caption: 'Dessin d\'Eren' },
     ];
 
     return (

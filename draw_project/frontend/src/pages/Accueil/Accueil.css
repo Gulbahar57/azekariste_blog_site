@@ -1,0 +1,29 @@
+/* Accueil.css */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /* Assure que le padding et la bordure sont inclus dans la largeur et la hauteur */
+}
+
+.accueil-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Utiliser 100% de la hauteur de la fenêtre */
+    background-color: #EBE8E8; /* Couleur de fond de la page */
+    padding: 20px; /* Ajoute un espace autour de l'élément */
+    border-radius: 8px;
+}
+
+.carousel-container {
+    width: 80%; /* Prend 80% de la largeur du conteneur parent */
+    max-width: 1200px; /* Largeur maximale du conteneur */
+    background-color: #fff; /* Couleur de fond du carrousel */
+    border-radius: 8px; /* Arrondit les coins du conteneur */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Légère ombre pour donner de la profondeur */
+    padding: 20px; /* Ajoute du padding à l'intérieur pour espacer le contenu */
+    margin: 25px; /* Ajoute un margin autour pour espacer du bord */
+    box-sizing: border-box; /* Assure que le padding est inclus dans la taille totale */
+}
